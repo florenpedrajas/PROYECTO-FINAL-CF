@@ -1,0 +1,210 @@
+:root {
+    --green:#058748;
+    --black: #1f0709;
+    --white: aliceblue;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background: #ffff   ;
+font-family: 'Comme', sans-serif;
+font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+#header{
+    position: relative;
+    width: 100%;
+
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+
+
+}
+.menu .logo_box{
+    margin-left: 20px;
+}
+
+.menu .logo_box h1 a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.menu .logo_box .logo{
+width: 10%;
+padding-top: 15px;
+}
+
+
+.menu .list__container{
+    margin-right: 20px;
+    
+}
+.menu .list__container .lists {
+    display: flex;
+}
+.menu .list__container .lists li{
+    list-style: none;
+}
+
+.menu .list__container .lists li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    font-size: 15px;
+    padding: 8px;
+    color: var(--black);
+    border-radius: 24px;
+    transition: 0.3s;
+   
+}
+.menu .list__container .lists li a.active{
+    background-color: var(--green);
+   
+}
+
+.menu .list__container .lists li a:hover{
+    background-color: var(--green);
+   
+}
+
+.btn__menu > .fa-bars{
+    display: none;
+}
+
+.img__header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/landroverLuis.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.img__header .cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img__header .cover h1{
+    font-size: 30px;
+    color: var(--white);
+    font-weight: 200;
+ 
+}
+
+.img__header .cover hr{
+    width: 400px;
+    height: 2px;
+    background: whitesmoke;
+    border: none;
+    margin-top: 5px;
+}
+
+.img__header .cover p{
+    font-size: 20px;
+    color: var(--white);
+    margin-top: 20px;
+}
+
+    button{
+    width: 170px;
+    height: 40px;
+    background-color: var(--green);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: var(--white);
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    }
+
+    button:hover{
+    background-color: var(--white);
+    color: var(--green);
+}
+
+
+.history{
+    width: 100%;
+    margin-top: 50px;
+}
+
+ .history .info__container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+ h2{
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+.history .info__container p{
+   font-size: 12px;
+    color: var(--black);
+    text-align: left;
+    line-height: 20px;
+    margin: auto;
+
+}
+
+.history .info__container .history__gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+.history .info__container .history__gallery img{
+    width: calc(33.33% - 10px);  
+    object-fit: cover;
+    margin: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.history .info__container .history__button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
