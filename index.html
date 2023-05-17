@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Comme:wght@300;500&family=Raleway:wght@100;400&display=swap"
         rel="stylesheet">
+
+        
 
 
 
@@ -17,8 +20,8 @@
 
 <body>
     <div class="go__top">
-        <span><img src="./images/punta-de-flecha-hacia-arriba.png"alt=""></span>
-    </div> 
+        <span><img src="./images/punta-de-flecha-hacia-arriba.png" alt=""></span>
+    </div>
 
     <header id="header">
         <nav class="menu">
@@ -27,32 +30,38 @@
                 <h1><img src="./images/logo.jpg" class="logo" alt="logo Landrover"> <a href="">Land Rover. Un
                         clásico</a>
                 </h1>
-                <span class="btn__menu"><i class="fa-solid fa-bars"></i></span>
+              
+                <span id="open__closed"><i class='bx bx-menu'></i></span>
 
             </div>
             <div class="list__container">
                 <ul class="lists">
-                    <li><a href="#" class="active">Inicio</a></li>
-                    <li><a href="#">Historia</a></li>
-                    <li><a href="#">Galería</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#start" class="active">Inicio</a></li>
+                    <li><a href="#history">Historia</a></li>
+                    <li><a href="#gallery">Galería</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contacto</a></li>
 
                 </ul>
             </div>
         </nav>
-        <div class="img__header">
+        <div id="start" class="img__header">
             <div class="cover">
                 <h1>Land Rover desde sus comienzos</h1>
                 <hr>
                 <p>Referente en la tracción a las cuatro ruedas</p>
-                <button id="seemore">Ver todo</button>
+                <button id="seemore">Ir a Historia</button>
             </div>
         </div>
+
+        <div class="sideways__bottom"></div>
 
     </header>
 
     <main>
+        <div id="history">
+            <br>
+        </div>
 
         <section class="history">
             <div class="info__container">
@@ -96,11 +105,12 @@
                     <img src="./images/img2.jpg" alt="Foto historia2">
                     <img src="./images/img3.jpg" alt="Foto historia3">
                 </div>
-                <div class="history__button"> <button>Leer más</button></div>
+                <!-- <div class="history__button"> <button>Leer más</button></div> -->
             </div>
         </section>
 
-        <section class="cards">
+        <section id="gallery" class="cards">
+            <div class="sideways__top"></div>
 
             <div class="deg__background"></div>
             <div class="ejeZcards">
@@ -108,30 +118,166 @@
                     <div class="card__title">
                         <h2> Imágenes </h2>
                         <hr>
-                    </div>
-                    <div class="card__img">
-                        <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="">
-                        <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="">
-                        <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="">
-                        <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="">
-                        <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="">
-                        <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="">
-                        <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="">
-                        <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="">
-                        <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="">
-                        <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="">
-                        <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="">
-                        <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="">
-                        <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="">
-
-                    </div>
-
                 </div>
+
+                    <div class="container__gallery">
+                        <div class="gallery__cards">
+                            <div class="card front">
+                                <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="Landrover serieI">
+                                <h3>LandRover serieI</h3>
+
+                            </div>
+                            <div class="card back">
+                                <h3> land Rover Santana</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis dolorum dolores
+                                    provident voluptate modi illo eligendi sapiente. Deleniti aspernatur maxime vitae
+                                    eaque
+                                    culpa molestias aliquid!</p>
+                                <div class="card__link">
+                                    <a href="#">Detalles</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="gallery__cards">
+                            <div class="card front">
+                                <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="Landrover serieI">
+                                <h3>LandRover serieI</h3>
+
+                            </div>
+                            <div class="card back">
+                                <h3> land Rover Santana</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis dolorum dolores
+                                    provident voluptate modi illo eligendi sapiente. Deleniti aspernatur maxime vitae
+                                    eaque
+                                    culpa molestias aliquid!</p>
+                                <div class="card__link">
+                                    <a href="#">Detalles</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="gallery__cards">
+                            <div class="card front">
+                                <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="Landrover serieI">
+                                <h3>LandRover serieI</h3>
+
+                            </div>
+                            <div class="card back">
+                                <h3> land Rover Santana</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis dolorum dolores
+                                    provident voluptate modi illo eligendi sapiente. Deleniti aspernatur maxime vitae
+                                    eaque
+                                    culpa molestias aliquid!</p>
+                                <div class="card__link">
+                                    <a href="#">Detalles</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="gallery__cards">
+                            <div class="card front">
+                                <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="Landrover serieI">
+                                <h3>LandRover serieI</h3>
+
+                            </div>
+                            <div class="card back">
+                                <h3> land Rover Santana</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis dolorum dolores
+                                    provident voluptate modi illo eligendi sapiente. Deleniti aspernatur maxime vitae
+                                    eaque
+                                    culpa molestias aliquid!</p>
+                                <div class="card__link">
+                                    <a href="#">Detalles</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="gallery__cards">
+                            <div class="card front">
+                                <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="Landrover serieI">
+                                <h3>LandRover serieI</h3>
+
+                            </div>
+                            <div class="card back">
+                                <h3> land Rover Santana</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis dolorum dolores
+                                    provident voluptate modi illo eligendi sapiente. Deleniti aspernatur maxime vitae
+                                    eaque
+                                    culpa molestias aliquid!</p>
+                                <div class="card__link">
+                                    <a href="#">Detalles</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="gallery__cards">
+                            <div class="card front">
+                                <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="Landrover serieI">
+                                <h3>LandRover serieI</h3>
+
+                            </div>
+                            <div class="card back">
+                                <h3> land Rover Santana</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis dolorum dolores
+                                    provident voluptate modi illo eligendi sapiente. Deleniti aspernatur maxime vitae
+                                    eaque
+                                    culpa molestias aliquid!</p>
+                                <div class="card__link">
+                                    <a href="#">Detalles</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="gallery__cards">
+                            <div class="card front">
+                                <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="Landrover serieI">
+                                <h3>LandRover serieI</h3>
+
+                            </div>
+                            <div class="card back">
+                                <h3> land Rover Santana</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis dolorum dolores
+                                    provident voluptate modi illo eligendi sapiente. Deleniti aspernatur maxime vitae
+                                    eaque
+                                    culpa molestias aliquid!</p>
+                                <div class="card__link">
+                                    <a href="#">Detalles</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="gallery__cards">
+                            <div class="card front">
+                                <img src="./images/Land_Rover_en_la_Sierra_de_Madrid.jpg" alt="Landrover serieI">
+                                <h3>LandRover serieI</h3>
+
+                            </div>
+                            <div class="card back">
+                                <h3> land Rover Santana</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis dolorum dolores
+                                    provident voluptate modi illo eligendi sapiente. Deleniti aspernatur maxime vitae
+                                    eaque
+                                    culpa molestias aliquid!</p>
+                                <div class="card__link">
+                                    <a href="#">Detalles</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+
+                        
+
+
+                    
+                        </div>
+                    </div>
 
             </div>
         </section>
 
-        <section class="testimony">
+        <section id="blog" class="testimony">
             <div class="testimony__title">
                 <h2>Testimonios</h2>
                 <hr>
@@ -183,35 +329,39 @@
         </section>
 
     </main>
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div class="deg__footer"></div>
 
         <div class="ejeZfooter">
             <div class="container__footer">
                 <div class="footer__title">
-                    <h2>Formulario de contacto</h2>
+                    <h2>Comentarios</h2>
                     <hr>
                 </div>
                 <div class="container__form">
-                    <form id="form" action="">
-                        <label for="user">Nombre:&emsp;<input type="text" id="user" name="user" placeholder="Indica tu nombre"></label>
-                        
+                    <form class="form" action="">
+                        <label for="user">Nombre:&emsp;<input type="text" id="user" name="user"
+                                placeholder="Indica tu nombre" class="data"></label>
 
-                        <label for="user">Email:&emsp;<input type="email" id="email" name="email" placeholder="Email@email"></label>
-                        
+
+                        <label for="user">Email:&emsp;<input type="email" id="email" name="email"
+                                placeholder="Email@email" class="data"></label>
+
 
                         <label for="message">Escribe tu mensaje:</label>
-                        <textarea name="message" id="message" ></textarea>
+                        <textarea name="message" id="message"></textarea>
+                            
+                        <input type="file" class="file__form" multiple>
 
                         <div class="send"> <button>Enviar</button></div>
 
                         <div class="messaje__form">
-                            <p>Escribe tus impresiones y las pondremos en común con los apasionados de LandRover</p>
-                         </div>
+                            <p>Envia tu comentario, tu foto o historia de tu LandRover y lo actualizaremos en la página</p>
+                        </div>
                     </form>
                 </div>
                 <div class="footer__text">
-                    <p> &copy; Floren Pedrajas 2023| Todos los derechos reservados</p>
+                    <p> &copy; Floren Pedrajas 2023 | Todos los derechos reservados</p>
                 </div>
             </div>
         </div>
