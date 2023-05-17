@@ -15,8 +15,13 @@ body {
     font-family: 'Comme', sans-serif;
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
-
+    transition: .3s ease all;
 }
+
+body.dark {
+    background: #2b2a2a;
+  }
+  
 
 html {
     scroll-behavior: smooth;
@@ -81,7 +86,17 @@ html {
     width: 100%;
 
 }
+body.dark nav {
+    background: #222222;
+                box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+  }
 
+  body.dark .menu .list__container .lists li a{
+    color: var(--white);
+  }
+  
+ 
+  
 .menu {
     position: fixed;
     top: 0;
@@ -99,30 +114,37 @@ html {
 }
 
 .menu .logo_box {
-    margin-left: 20px;
+    margin-left: 30px;
+
 }
 
 .menu .logo_box h1 a {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 2.2rem;
     font-weight: 400;
     color: var(--black);
+    margin-bottom: 20px;
 
 }
 
+body.dark .menu .logo_box h1 a{
+    color: var(--white);
+  }
+
 .menu .logo_box .logo {
-    width: 10%;
+    width: 15%;
     margin: 0;
 }
 
 
 .menu .list__container {
-    margin-right: 20px;
+    margin-right: 30px;
 
 }
 
 .menu .list__container .lists {
     display: flex;
+    padding-right: 100px;
 }
 
 .menu .list__container .lists li {
@@ -132,7 +154,7 @@ html {
 .menu .list__container .lists li a {
     text-decoration: none;
     margin: 0px 10px;
-    font-size: 15px;
+    font-size: 23px;
     padding: 8px;
     color: var(--black);
     border-radius: 24px;
@@ -149,6 +171,61 @@ html {
     background-color: var(--green);
 
 }
+
+.nignt__mode{
+    width: 80px;
+    margin: auto;
+    margin-left: 60px;
+    margin-right: 0;
+    background-color: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+   
+    display: flex;
+    outline: none; 
+  
+
+}
+.nignt__mode::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background:var(--white);
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: 0.3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2) ;
+
+        
+}  
+
+.nignt__mode.active {
+    background: orange;
+    color: #000;
+  }
+  
+
+  .nignt__mode.active::after {
+    right: 0;
+    left: unset;
+  }
+
+.nignt__mode span {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    background: none;
+    color: var(--white);
+    
+}
+
 
 #open__closed {
     display: none;
@@ -178,7 +255,7 @@ html {
 }
 
 .img__header .cover h1 {
-    font-size: 30px;
+    font-size: 2.5rem;
     color: var(--white);
     font-weight: 200;
 
@@ -193,7 +270,7 @@ html {
 }
 
 .img__header .cover p {
-    font-size: 20px;
+    font-size: 30px;
     color: var(--white);
     margin-top: 20px;
 }
@@ -205,7 +282,7 @@ button {
     border-radius: 24px;
     border: none;
     outline: none;
-    font-size: 22px;
+    font-size: 25px;
     color: var(--white);
     text-align: center;
     margin-top: 20px;
@@ -234,22 +311,31 @@ button:hover {
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: 400;
     color: var(--black);
     text-align: left;
     margin-bottom: 20px;
 
 }
+body.dark h2{
+    color: var(--white);
+    
+  }
 
 .history .info__container p {
-    font-size: 15px;
+    font-size: 1.5rem;
     color: var(--black);
     text-align: left;
-    line-height: 25px;
+    line-height: 30px;
     margin: auto;
+    line-height: 1.8;
 
 }
+body.dark .history .info__container p{
+    color: var(--white);
+    
+  }
 
 .history .info__container .history__gallery {
     width: 100%;
@@ -314,7 +400,7 @@ h2 {
 }
 
 .cards .container__cards h2 {
-    font-size: 25px;
+    font-size: 2.5rem;
     color: var(--white);
     font-weight: normal;
     text-align: center;
@@ -434,13 +520,17 @@ h2 {
 }
 
 .testimony .testimony__title h2 {
-    font-size: 25px;
+    font-size: 2.5rem;
     color: var(--black);
     font-weight: normal;
     text-align: center;
 
 
 }
+body.dark .testimony .testimony__title h2{
+    color: var(--white);
+    
+  }
 
 .testimony .testimony__title hr {
     width: 75%;
@@ -505,6 +595,10 @@ padding-top: 20px;
     margin-bottom: 20px;
     transition: 2s;
 }
+body.dark .testimony .container__testimony .cards__testimony .testimony__text p{
+    color: var(--white);
+    
+  }
 
 .testimony .container__testimony .cards__testimony .testimony__text p {
     font-size: 15px;
@@ -563,7 +657,7 @@ padding-top: 20px;
 
 .footer .container__footer .footer__title h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 2.5rem;
     color: var(--white);
     font-weight: normal;
 
@@ -698,15 +792,7 @@ padding-top: 20px;
 
 
 @media screen and (max-width: 900px) {
-    /* .btn__menu>.hamburguer {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 30px;
-        font-size: 28px;
-        height: 30px;
-        cursor: pointer;
-    } */
+  
 
     #open__closed{
         display: block;
@@ -768,7 +854,7 @@ padding-top: 20px;
     .bx{
         display: block;
         text-decoration: none;
-        font-size: 40px;
+        font-size: 2.5rem;
         margin-top: 0px;      
         position: absolute;       
         right: 20px;       

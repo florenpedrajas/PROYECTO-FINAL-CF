@@ -3,6 +3,7 @@ let menu = document.querySelector('.list__container');
 let containerMenu = document.querySelector('.menu');
 let activador = true;
 
+
 btnMenu.addEventListener('click', () => {
     // document.querySelector('#open__closed i').classList.toggle('bx times');
 
@@ -87,4 +88,24 @@ bottom.addEventListener('click', () => {
 
 
 
+const btnNightMode = document.querySelector('#night__mode');
 
+btnNightMode.addEventListener('click', () => {
+	document.body.classList.toggle('dark');
+	btnNightMode.classList.toggle('active');
+
+	// Guardamos el modo en localstorage.
+	if(document.body.classList.contains('dark')){
+		localStorage.setItem('dark__mode', 'true');
+	} else {
+		localStorage.setItem('dark__mode', 'false');
+	}
+});
+
+if(localStorage.getItem('dark__mode') === 'true'){
+	document.body.classList.add('dark');
+	btnNightMode.classList.add('active');
+} else {
+	document.body.classList.remove('dark');
+	btnNightMode.classList.remove('active');
+}
