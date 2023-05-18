@@ -88,7 +88,7 @@ html {
 }
 body.dark nav {
     background: #222222;
-                box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
   }
 
   body.dark .menu .list__container .lists li a{
@@ -102,9 +102,9 @@ body.dark nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: 80px;
     background: #fff;
-
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -114,16 +114,19 @@ body.dark nav {
 }
 
 .menu .logo_box {
-    margin-left: 30px;
+margin-left: 30px;
+ /* padding-bottom: 30px; */
+   display: flex;
+  
 
 }
 
 .menu .logo_box h1 a {
     text-decoration: none;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 400;
     color: var(--black);
-    margin-bottom: 20px;
+   
 
 }
 
@@ -131,9 +134,10 @@ body.dark .menu .logo_box h1 a{
     color: var(--white);
   }
 
-.menu .logo_box .logo {
-    width: 15%;
-    margin: 0;
+.menu .logo_box img {
+    width: 17%;
+ 
+    
 }
 
 
@@ -557,9 +561,13 @@ padding-top: 20px;
 
 .testimony .container__testimony .cards__testimony {
     position: relative;
-    width: 35%;
+    /* width: 35%;
     height: 50%;
+    margin: 20px; */
+    width: 300px;
+    height: 550px;
     margin: 20px;
+
 
 }
 
@@ -776,20 +784,41 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p{
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 30px;
+    height: 50px;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
     border-top: 2px solid #fff;
+    padding:0 35%;
 }
 
 .footer .footer__text p {
-    font-size: 15px;
-    text-align: center;
+    font-size: 25px;
+    text-align: start;
     color: #fff;
 }
 
+.container__contact{
+    display: flex;
+    gap: 1.5em;
+   
+}
+.contact__link{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border: 1px solid aliceblue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+}
+
+/* .contact__icon{
+    width: 23px;
+} */
 
 @media screen and (max-width: 900px) {
   
