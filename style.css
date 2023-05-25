@@ -10,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background: #ffff;
     font-family: 'Comme', sans-serif;
@@ -20,16 +21,12 @@ body {
 
 body.dark {
     background: #2b2a2a;
-  }
-  
+}
+
 
 html {
     scroll-behavior: smooth;
 }
-
-
-
-
 
 .go__top {
     position: fixed;
@@ -39,14 +36,12 @@ html {
     height: 40px;
     border: 2px solid var(--green);
     background: var(--white);
-
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     z-index: 1000;
     transition: 0.5s;
-
 }
 
 .go__top:hover {
@@ -57,8 +52,6 @@ html {
 
 .go__top img {
     height: 30px;
-
-
 }
 
 .sideways__bottom {
@@ -80,70 +73,60 @@ html {
     z-index: 10;
 }
 
-
 #header {
     position: relative;
     width: 100%;
-
 }
-body.dark nav {
-    background: #222222;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
-  }
 
-  body.dark .menu .list__container .lists li a{
+body.dark nav {
+    background: #2b2a2a;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+}
+
+body.dark .menu .list__container .lists li a {
     color: var(--white);
-  }
-  
- 
-  
+}
+
 .menu {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
+    height: 60px;
     background: #fff;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 9999;
-
-
 }
 
 .menu .logo_box {
-margin-left: 30px;
- /* padding-bottom: 30px; */
-   display: flex;
-  
-
+    margin-left: 30px;
+    display: flex;
+}
+.menu .logo_box .container__logo{
+    display: flex;
 }
 
-.menu .logo_box h1 a {
+.menu .logo_box h1  {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 400;
     color: var(--black);
-   
-
 }
 
-body.dark .menu .logo_box h1 a{
+body.dark .menu .logo_box h1  {
     color: var(--white);
-  }
+}
 
 .menu .logo_box img {
-    width: 17%;
- 
-    
+    width: 100px;
+padding-right: 20px;
 }
-
 
 .menu .list__container {
     margin-right: 30px;
-
 }
 
 .menu .list__container .lists {
@@ -163,20 +146,17 @@ body.dark .menu .logo_box h1 a{
     color: var(--black);
     border-radius: 24px;
     transition: 0.3s;
-
 }
 
 .menu .list__container .lists li a.active {
     background-color: var(--green);
-
 }
 
 .menu .list__container .lists li a:hover {
     background-color: var(--green);
-
 }
 
-.nignt__mode{
+.nignt__mode {
     width: 80px;
     margin: auto;
     margin-left: 60px;
@@ -186,39 +166,34 @@ body.dark .menu .logo_box h1 a{
     border: none;
     position: relative;
     cursor: pointer;
-   
     display: flex;
-    outline: none; 
-  
-
+    outline: none;
 }
-.nignt__mode::after{
+
+.nignt__mode::after {
     content: "";
     display: block;
     width: 40px;
     height: 40px;
     position: absolute;
-    background:var(--white);
+    background: var(--white);
     top: 0;
     left: 0;
     right: unset;
     border-radius: 100px;
     transition: 0.3s ease all;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2) ;
-
-        
-}  
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
 
 .nignt__mode.active {
     background: orange;
     color: #000;
-  }
-  
+}
 
-  .nignt__mode.active::after {
+.nignt__mode.active::after {
     right: 0;
     left: unset;
-  }
+}
 
 .nignt__mode span {
     width: 40px;
@@ -227,9 +202,7 @@ body.dark .menu .logo_box h1 a{
     display: block;
     background: none;
     color: var(--white);
-    
 }
-
 
 #open__closed {
     display: none;
@@ -258,11 +231,11 @@ body.dark .menu .logo_box h1 a{
     flex-direction: column;
 }
 
-.img__header .cover h1 {
-    font-size: 2.5rem;
+.img__header .cover h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
     color: var(--white);
-    font-weight: 200;
-
+ 
 }
 
 .img__header .cover hr {
@@ -311,7 +284,6 @@ button:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
-
 }
 
 h2 {
@@ -320,12 +292,11 @@ h2 {
     color: var(--black);
     text-align: left;
     margin-bottom: 20px;
-
 }
-body.dark h2{
+
+body.dark h2 {
     color: var(--white);
-    
-  }
+}
 
 .history .info__container p {
     font-size: 1.5rem;
@@ -334,12 +305,11 @@ body.dark h2{
     line-height: 30px;
     margin: auto;
     line-height: 1.8;
-
 }
-body.dark .history .info__container p{
+
+body.dark .history .info__container p {
     color: var(--white);
-    
-  }
+}
 
 .history .info__container .history__gallery {
     width: 100%;
@@ -371,7 +341,6 @@ body.dark .history .info__container p{
     background-position: center;
     background-size: cover;
     margin-top: 100px;
-
 }
 
 .cards .deg__background {
@@ -393,7 +362,6 @@ body.dark .history .info__container p{
     position: relative;
     width: 100%;
     padding-top: 30px;
-
 }
 
 .cards .container__cards .card__title {
@@ -408,30 +376,32 @@ body.dark .history .info__container p{
     color: var(--white);
     font-weight: normal;
     text-align: center;
-
+    margin-bottom: 0;
 }
 
 .cards .container__cards hr {
     background: var(--white);
-
-} 
-
-.container__gallery{
-   display: flex;
-   flex-wrap: wrap;
-   align-items:flex-start;
-   justify-content: space-evenly;
-   min-height: 100vh;
-   padding-top: 20px;
-    
+    width: 90%;
+   margin:0 5%
 }
-.gallery__cards{
+
+.container__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.gallery__cards {
     position: relative;
     width: 400px;
     height: 400px;
     margin: 10px;
-
 }
+
 .cards .container__gallery .gallery__cards .card {
     position: absolute;
     width: 100%;
@@ -440,14 +410,14 @@ body.dark .history .info__container p{
     border-radius: 10px;
     overflow: hidden;
     transition: 0.9s;
-
 }
+
 .cards .container__gallery .gallery__cards .front {
     transform: perspective(600px) rotateY(0deg);
     box-shadow: 0 5px 10px var(--black);
-
 }
-.cards .container__gallery .gallery__cards  .front img {
+
+.cards .container__gallery .gallery__cards .front img {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -462,11 +432,10 @@ body.dark .history .info__container p{
     height: 45px;
     color: var(--white);
     background: var(--green);
-   font-size: 25px;
+    font-size: 25px;
     text-align: center;
-
-
 }
+
 .cards .container__gallery .gallery__cards .back {
     transform: perspective(600px) rotateY(180deg);
     box-shadow: 0 5px 10px var(--black);
@@ -477,50 +446,49 @@ body.dark .history .info__container p{
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-
-
 }
-.cards .container__gallery .gallery__cards .back .card__link{
+
+.cards .container__gallery .gallery__cards .back .card__link {
     border-top: solid 1px var(--white);
     height: 50px;
     line-height: 50px;
 }
 
-.cards .container__gallery .gallery__cards .back .card__link a{
+.cards .container__gallery .gallery__cards .back .card__link a {
     color: var(--white);
     cursor: pointer;
 }
 
-.cards .container__gallery .gallery__cards .back h3{
+.cards .container__gallery .gallery__cards .back h3 {
     font-size: 25px;
     margin-top: 10px;
     letter-spacing: 2px;
-
 }
-.cards .container__gallery .gallery__cards .back p{
+
+.cards .container__gallery .gallery__cards .back p {
     letter-spacing: 1px;
     font-size: 15px;
 }
-.cards .container__gallery .gallery__cards:hover .front{
+
+.cards .container__gallery .gallery__cards:hover .front {
     transform: perspective(600px) rotateY(180deg);
 }
-.cards .container__gallery .gallery__cards:hover .back{
+
+.cards .container__gallery .gallery__cards:hover .back {
     transform: perspective(600px) rotateY(360deg);
 }
-
 
 .testimony {
     width: 100%;
     padding-top: 30px;
+    
 }
 
 .testimony .testimony__title {
     padding: 5px;
     text-align: center;
-    width: 18%;
+    width: 100%;
     margin: auto;
-
-
 }
 
 .testimony .testimony__title h2 {
@@ -528,47 +496,36 @@ body.dark .history .info__container p{
     color: var(--black);
     font-weight: normal;
     text-align: center;
-
-
+    margin-bottom: 15px;
 }
-body.dark .testimony .testimony__title h2{
+
+body.dark .testimony .testimony__title h2 {
     color: var(--white);
-    
-  }
+}
 
 .testimony .testimony__title hr {
-    width: 75%;
-    height: 2px;
-    margin: auto;
+   
+    width: 90%;
+    margin:0% 5%;
     background: var(--black);
 }
 
-
 .testimony .container__testimony {
-width: 90%;
-margin: auto;
-display: flex;
-flex-wrap: wrap;
-align-items:center;
-justify-content: space-evenly;
-min-height: 100vh;
-padding-top: 20px;
-
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+   
+    padding: 30px 0;
 }
-
-
-
 
 .testimony .container__testimony .cards__testimony {
     position: relative;
-    /* width: 35%;
-    height: 50%;
-    margin: 20px; */
     width: 300px;
     height: 550px;
-    margin: 20px;
-
-
+    margin: 020px;
 }
 
 .testimony .container__testimony .cards__testimony .card__img {
@@ -603,10 +560,10 @@ padding-top: 20px;
     margin-bottom: 20px;
     transition: 2s;
 }
-body.dark .testimony .container__testimony .cards__testimony .testimony__text p{
+
+body.dark .testimony .container__testimony .cards__testimony .testimony__text p {
     color: var(--white);
-    
-  }
+}
 
 .testimony .container__testimony .cards__testimony .testimony__text p {
     font-size: 15px;
@@ -615,7 +572,6 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p{
     line-height: 25px;
     transition: 2s;
 }
-
 
 .testimony .container__testimony .cards__testimony .testimony__text:hover {
     border: 2px solid var(--black);
@@ -649,18 +605,17 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p{
 }
 
 .footer .container__footer {
-    width: 90%;
-    padding-top: 10px;
-    margin: auto;
-    padding-bottom: 60px;
+    width: 100%;
+    padding-top: 20px;
+ 
+    padding-bottom: 100px;
 }
 
 .footer .container__footer .footer__title {
-    padding: 20px;
+    padding: 15px 75px ;
     text-align: center;
-    width: 50%;
-    margin: auto;
-
+  
+    
 }
 
 .footer .container__footer .footer__title h2 {
@@ -668,53 +623,43 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p{
     font-size: 2.5rem;
     color: var(--white);
     font-weight: normal;
-
 }
 
 .footer .container__footer .footer__title hr {
-
-    width: 80%;
+    width: 100%;
     height: 2px;
-    margin: auto;
+   
     background: var(--white);
-
 }
 
 .footer .container__footer .container__form {
-  
     background-color: #fff;
     width: 90%;
     max-width: 500px;
     margin: 0 auto;
-    padding: 1em 3em;
     border-radius: 10px;
     box-shadow: 0 5px 10px -5px rgb(0, 0, 0, 0.3);
     border: 2px solid var(--green);
     text-align: center;
-  }
-
-
+    margin-top: 20px;
+}
 
 .footer .container__footer .container__form .form {
     display: flex;
     justify-content: left;
     flex-direction: column;
+    padding: 1em 3em;
+
 }
 
 .footer .container__footer .container__form .form label {
     font-size: 20px;
     text-align: left;
     color: var(--black);
-    margin: 15px 0px 10px 0px; 
-
-
+    margin: 15px 0px 10px 0px;
 }
 
 .footer .container__footer .container__form .form input {
-
-
-  
-    
     width: 100%;
     background-color: none;
     font-family: inherit;
@@ -726,10 +671,7 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p{
     border-bottom: 1px solid var(--color);
 }
 
-
-
-
-.footer .container__footer .container__form .data{
+.footer .container__footer .container__form .data {
     width: 100%;
 }
 
@@ -743,33 +685,23 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p{
     font-size: 15px;
     color: var(--black);
     padding: 20px;
-
 }
-.footer .container__footer .container__form .file__form{
 
+.footer .container__footer .container__form .file__form {
     width: 75%;
-    margin-top: 10px;   
+    margin-top: 10px;
     justify-content: start;
-
-    
-   
-  
-
 }
-
 
 .footer .container__footer .container__form .form .send {
     display: flex;
- 
     justify-content: end;
-  
 }
 
 .footer .container__footer .container__form .form .send button {
     width: 90px;
     height: 30px;
     font-size: 15px;
-    
 
 }
 
@@ -787,10 +719,10 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p{
     height: 50px;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     border-top: 2px solid #fff;
-    padding:0 35%;
+    padding: 0 35%;
 }
 
 .footer .footer__text p {
@@ -799,12 +731,13 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p{
     color: #fff;
 }
 
-.container__contact{
+.container__contact {
     display: flex;
     gap: 1.5em;
-   
+
 }
-.contact__link{
+
+.contact__link {
     text-decoration: none;
     width: 40px;
     height: 40px;
@@ -820,10 +753,58 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p{
     width: 23px;
 } */
 
-@media screen and (max-width: 900px) {
-  
+@media screen and (max-height:1439px){
 
-    #open__closed{
+    .menu .list__container .lists {
+       padding-top: 20px;
+        padding-right: 0px;
+    }
+    .menu .logo_box h1  {
+       
+        font-size: 2.5rem;
+        
+    }
+
+    .menu .list__container .lists li a {
+       
+        font-size: 1.3rem;
+        
+    }
+    .nignt__mode {
+        width: 60px;
+        height: 30px;
+        margin-bottom: 20px;
+       
+    }
+
+    .nignt__mode::after {
+       
+        width: 30px;
+        height: 30px;
+        
+    }
+
+    .nignt__mode.active::after {
+        right: 0;
+        left: unset;
+    }
+    
+    .nignt__mode span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+
+    }
+    
+   
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+
+    #open__closed {
         display: block;
         position: absolute;
         top: 20px;
@@ -833,22 +814,15 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p{
         cursor: pointer;
 
     }
-    /* .menu .list__container {
-        position: absolute;
-        top: 60px;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 60px);
 
-    } */
-    .menu .list__container{
+    .menu .list__container {
         background-color: var(--green);
         width: 40%;
         height: 45%;
         left: -100%;
-        position: fixed;        
+        position: fixed;
         top: 0;
-       
+
         bottom: 0;
         overflow-y: hidden;
         margin-top: 55px;
@@ -861,42 +835,38 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p{
 
     .menu .list__container .lists {
         width: 100%;
-        height: 100%;        
+        height: 100%;
         padding: 5%;
-        display: block;     
+        display: block;
         align-items: center;
         flex-direction: column;
         border-top: solid var(--green);
-        
+
     }
 
     .menu .list__container .lists li {
         width: 90%;
         margin: auto;
-       
-        border-bottom: 1px solid rgba(255, 255, 255,  0.6);
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
         text-align: center;
         float: none;
         padding-top: 10px;
-         
+
     }
-    .bx{
+
+    .bx {
         display: block;
         text-decoration: none;
         font-size: 2.5rem;
-        margin-top: 0px;      
-        position: absolute;       
-        right: 20px;       
+        margin-top: 0px;
+        position: absolute;
+        right: 20px;
         cursor: pointer;
-
-        
-
-   
     }
 
     .menu .list__container .lists li a {
-       
-        font-size: 20px;       
+        font-size: 20px;
         color: #f5f5f5;
 
     }
