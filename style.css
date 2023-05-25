@@ -83,9 +83,7 @@ body.dark nav {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
 }
 
-body.dark .menu .list__container .lists li a {
-    color: var(--white);
-}
+
 
 .menu {
     position: fixed;
@@ -96,7 +94,7 @@ body.dark .menu .list__container .lists li a {
     background: #fff;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     z-index: 9999;
 }
@@ -105,33 +103,32 @@ body.dark .menu .list__container .lists li a {
     margin-left: 30px;
     display: flex;
 }
-.menu .logo_box .container__logo{
+
+.menu .logo_box .container__logo {
     display: flex;
 }
 
-.menu .logo_box h1  {
+.menu .logo_box h1 {
     text-decoration: none;
     font-size: 2.5rem;
     font-weight: 400;
     color: var(--black);
 }
 
-body.dark .menu .logo_box h1  {
+body.dark .menu .logo_box h1 {
     color: var(--white);
 }
 
 .menu .logo_box img {
     width: 100px;
-padding-right: 20px;
+    padding-right: 20px;
 }
 
-.menu .list__container {
-    margin-right: 30px;
-}
 
 .menu .list__container .lists {
     display: flex;
-    padding-right: 100px;
+    padding-bottom: 0px;
+    padding-left: 200px;
 }
 
 .menu .list__container .lists li {
@@ -148,6 +145,10 @@ padding-right: 20px;
     transition: 0.3s;
 }
 
+body.dark .menu .list__container .lists li a{
+    color: var(--white);
+}
+
 .menu .list__container .lists li a.active {
     background-color: var(--green);
 }
@@ -160,7 +161,7 @@ padding-right: 20px;
     width: 80px;
     margin: auto;
     margin-left: 60px;
-    margin-right: 0;
+    margin-right: 15px;
     background-color: #343D5B;
     border-radius: 1000px;
     border: none;
@@ -235,7 +236,7 @@ padding-right: 20px;
     font-size: 3.5rem;
     font-weight: 400;
     color: var(--white);
- 
+
 }
 
 .img__header .cover hr {
@@ -382,7 +383,7 @@ body.dark .history .info__container p {
 .cards .container__cards hr {
     background: var(--white);
     width: 90%;
-   margin:0 5%
+    margin: 0 5%
 }
 
 .container__gallery {
@@ -481,7 +482,7 @@ body.dark .history .info__container p {
 .testimony {
     width: 100%;
     padding-top: 30px;
-    
+
 }
 
 .testimony .testimony__title {
@@ -504,9 +505,9 @@ body.dark .testimony .testimony__title h2 {
 }
 
 .testimony .testimony__title hr {
-   
+
     width: 90%;
-    margin:0% 5%;
+    margin: 0% 5%;
     background: var(--black);
 }
 
@@ -517,7 +518,7 @@ body.dark .testimony .testimony__title h2 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-   
+
     padding: 30px 0;
 }
 
@@ -607,15 +608,15 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p 
 .footer .container__footer {
     width: 100%;
     padding-top: 20px;
- 
+
     padding-bottom: 100px;
 }
 
 .footer .container__footer .footer__title {
-    padding: 15px 75px ;
+    padding: 15px 75px;
     text-align: center;
-  
-    
+
+
 }
 
 .footer .container__footer .footer__title h2 {
@@ -628,7 +629,7 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p 
 .footer .container__footer .footer__title hr {
     width: 100%;
     height: 2px;
-   
+
     background: var(--white);
 }
 
@@ -753,72 +754,118 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p 
     width: 23px;
 } */
 
-@media screen and (max-height:1439px){
+@media screen and (max-width:1439px) {
+
+
+    .menu .logo_box h1 {
+        width: 320px;
+        margin: 0;
+        font-size: 1.8rem;
+
+    }
 
     .menu .list__container .lists {
-       padding-top: 20px;
-        padding-right: 0px;
-    }
-    .menu .logo_box h1  {
-       
-        font-size: 2.5rem;
-        
+
+        padding-left: 150px;
     }
 
-    .menu .list__container .lists li a {
-       
-        font-size: 1.3rem;
-        
-    }
     .nignt__mode {
         width: 60px;
         height: 30px;
         margin-bottom: 20px;
-       
+        margin-right: 30px;
+
     }
 
     .nignt__mode::after {
-       
+
         width: 30px;
         height: 30px;
-        
+
     }
 
     .nignt__mode.active::after {
         right: 0;
         left: unset;
     }
-    
+
     .nignt__mode span {
         width: 30px;
         height: 30px;
         line-height: 30px;
 
     }
-    
    
+    
 
+
+
+}
+
+@media screen and (max-width:1240px) {
+
+
+
+    .menu .logo_box h1 {
+        display: none;
+    }
+
+    .menu .list__container .lists {
+        padding-left: 100px;
+    }
+    .menu .list__container .lists li a {   
+        font-size: 22px;
+        padding: 6px;
+    }
+    .footer .container__footer .footer__title {
+        padding: 15px 50px;
+     
+    
+    
+    }
+    .footer .footer__text {
+
+        padding: 0 25%;
+    }
+        
 }
 
 
 @media screen and (max-width: 900px) {
+    .menu {
+      
+        justify-content: space-between;
+        align-items: center;
+        
+    }
 
-
+    .nignt__mode {
+       
+       margin-top: 20px;
+       margin-right: 125px;
+    
+    }
     #open__closed {
         display: block;
         position: absolute;
-        top: 20px;
+    
         right: 30px;
-        font-size: 28px;
-        height: 30px;
-        cursor: pointer;
+        font-size: 50px;
+        height: 40px;
+        cursor: pointer; 
 
     }
+    .img__header .cover h2 {
+        font-size: 40px;
+       
+    
+    }
+    
 
     .menu .list__container {
         background-color: var(--green);
         width: 40%;
-        height: 45%;
+        height: 30%;
         left: -100%;
         position: fixed;
         top: 0;
@@ -851,22 +898,14 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p 
         border-bottom: 1px solid rgba(255, 255, 255, 0.6);
         text-align: center;
         float: none;
-        padding-top: 10px;
+        padding-top: 15px;
 
     }
 
-    .bx {
-        display: block;
-        text-decoration: none;
-        font-size: 2.5rem;
-        margin-top: 0px;
-        position: absolute;
-        right: 20px;
-        cursor: pointer;
-    }
+   
 
     .menu .list__container .lists li a {
-        font-size: 20px;
+        font-size: 25px;
         color: #f5f5f5;
 
     }
@@ -880,4 +919,117 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p 
         background: none;
         color: var(--black);
     }
+    .history .info__container p {
+        font-size: 1rem;
+    
+    }
+    .sideways__top {
+         border-width: 7vh 100vw 0 0;
+    }
+
+    .gallery__cards {
+        position: relative;
+        width: 600px;
+        height: 400px;
+        margin: 10px;
+    }
+    .cards .container__gallery .gallery__cards .front h3 {
+       
+        font-size: 30px;
+     
+    }
+    .cards .container__gallery .gallery__cards .back p {
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+    .cards .container__gallery .gallery__cards .back  h3 {
+        font-size: 30px;
+       
+    }
+    .cards .container__gallery .gallery__cards .back .card__link a {
+        font-size: 30px;
+        
+}
+.footer .container__footer .container__form {
+    
+    max-width: 600px;
+   
+}
+.footer .container__footer .container__form .form label {
+    font-size: 28px;
+}
+
+.footer .container__footer .container__form .form input {
+    font-size: 20px;
+   
+}
+
+.footer .container__footer .container__form .data {
+    width: 100%;
+}
+
+.footer .container__footer .container__form .form textarea {
+    font-size: 20px;
+    
+}
+
+
+
+.footer .container__footer .container__form .form .send button {
+    width: 100px;
+    height: 35px;
+    font-size: 25px;
+
+}
+
+.footer .container__footer .container__form .form .messaje__form {
+    font-size: 22px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+@media screen and (max-width: 750px) {
+    .img__header .cover h2 {
+        font-size: 30px;
+       
+    
+    }
+    .img__header .cover p {
+        font-size: 25px;
+    }
+    .img__header {
+        position: relative;
+        width: 100%;
+        height: 80vh;
+        background-image: url(./images/landroverLuisMovil.png);
+        background-attachment: fixed;
+        background-position:cover;
+        background-size: cover;
+    }
+    
+    .cards .container__cards .card__title {    
+        width: 100%;     
+    }
+
+    .testimony .container__testimony .cards__testimony {
+        position: relative;
+        width: 500px;
+        height: 450px;
+   
+    }
+    
+    .testimony .container__testimony .cards__testimony .testimony__text h4 {
+              font-size: 33px;
+       
+    }
+    .testimony .container__testimony .cards__testimony .testimony__text p {
+        font-size: 20px;
+    }
+    .footer .footer__text {
+
+        padding: 0 15%;
+    }
+    
+
+}
+
 }
