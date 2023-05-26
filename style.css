@@ -17,6 +17,8 @@ body {
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
     transition: .3s ease all;
+
+
 }
 
 body.dark {
@@ -76,6 +78,7 @@ html {
 #header {
     position: relative;
     width: 100%;
+
 }
 
 body.dark nav {
@@ -211,6 +214,7 @@ body.dark .menu .list__container .lists li a{
 
 .img__header {
     position: relative;
+    right: 0;
     width: 100%;
     height: 100vh;
     background-image: url(./images/landroverLuis.jpg);
@@ -865,7 +869,7 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p 
     .menu .list__container {
         background-color: var(--green);
         width: 40%;
-        height: 30%;
+        height: 35%;
         left: -100%;
         position: fixed;
         top: 0;
@@ -905,7 +909,7 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p 
    
 
     .menu .list__container .lists li a {
-        font-size: 25px;
+        font-size: 20px;
         color: #f5f5f5;
 
     }
@@ -988,6 +992,10 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p 
     padding-top: 15px;
 }
 @media screen and (max-width: 750px) {
+    .menu .list__container {       
+        height: 35%;
+    }
+
     .img__header .cover h2 {
         font-size: 30px;
        
@@ -1001,9 +1009,7 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p 
         width: 100%;
         height: 80vh;
         background-image: url(./images/landroverLuisMovil.png);
-        background-attachment: fixed;
-        background-position:cover;
-        background-size: cover;
+    
     }
     
     .cards .container__cards .card__title {    
@@ -1031,5 +1037,150 @@ body.dark .testimony .container__testimony .cards__testimony .testimony__text p 
     
 
 }
+@media screen and (max-width: 550px) {
+    
+  
+    .img__header .cover h2 {
+        font-size: 23px;
+       
+    
+    }
+    .img__header .cover p {
+        font-size: 18px;
+    }
+    .gallery__cards {
+       
+        width: 450px;
+        height: 400px;
+       
+    }
+    .cards .container__gallery .gallery__cards .front h3 {
+       
+        font-size: 25px;
+     
+    }
+    .cards .container__gallery .gallery__cards .back p {
+        letter-spacing: 1px;
+        font-size: 15px;
+    }
+    .cards .container__gallery .gallery__cards .back  h3 {
+        font-size: 25px;
+       
+    }
+    .cards .container__gallery .gallery__cards .back .card__link a {
+        font-size: 25px;
+}
 
+.testimony .container__testimony .cards__testimony {
+ 
+    width: 500px;
+    height: 520px;
+
+}
+
+.testimony .container__testimony .cards__testimony .testimony__text h4 {
+          font-size: 25px;
+   
+}
+.testimony .container__testimony .cards__testimony .testimony__text p {
+    font-size: 15px;
+
+}
+.footer .container__footer .container__form .form {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 1em 2em;
+
+}
+
+
+.footer .container__footer .container__form .form label {
+    font-size: 20px;
+}
+
+.footer .container__footer .container__form .form input {
+    font-size: 16px;
+   
+}
+
+.footer .container__footer .container__form .data {
+    width: 100%;
+}
+
+.footer .container__footer .container__form .form textarea {
+    font-size: 16px;
+    
+}
+
+.footer .container__footer .container__form .form .send button {
+    width: 80px;   
+    font-size: 20px;
+}
+
+.footer .container__footer .container__form .form .messaje__form {
+   
+    font-size: 16px;
+    
+}
+.footer .footer__text {
+
+    padding: 0 10%;
+}
+.footer .footer__text p {
+    font-size: 16px;
+   
+}
+}
+
+@media screen and (max-width: 400px) {
+
+.menu .list__container {       
+    height: 28%;
+}
+.menu .list__container .lists li a {
+    font-size: 15px;
+    color: #f5f5f5;
+
+}
+
+
+
+.img__header .cover h2 {
+    font-size: 20px;
+   
+
+}
+.img__header .cover p {
+    font-size: 15px;
+}
+.gallery__cards {
+   
+    width: 330px;
+    height: 400px;
+   
+}
+.cards .container__gallery .gallery__cards .front h3 {
+   
+    font-size: 20px;
+ 
+}
+
+.cards .container__gallery .gallery__cards .back  h3 {
+    font-size: 20px;
+   
+}
+.cards .container__gallery .gallery__cards .back .card__link a {
+    font-size: 20px;
+}
+
+.testimony .container__testimony .cards__testimony {
+
+width: 500px;
+height: 550px;
+
+}
+
+
+}
 }
